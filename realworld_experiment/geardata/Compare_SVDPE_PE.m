@@ -61,9 +61,6 @@ if 1
 else
     load test4_gear_110225.mat
 end
-%"Dissipative Standard Map,DSM","Shaw Van Derpol Oscillator, SVDO", "Rossler Attractor,RA",
-% "Henon Area Preserving Quadratic Map, HAPQM","Simplest Driven Chaotic Flow, SDCF",
-% "Random Noise, RN","White Gaussian Noise, WGN","Random Walk, RW"
 
 %% plot graph
 clc;close all;

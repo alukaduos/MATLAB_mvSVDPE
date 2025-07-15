@@ -11,7 +11,6 @@ countf = 8;countdrawout = countf+1;
 fonttxt_size = 8;fig_width = 14;fig_height = fig_width*0.618*0.5;
 drawout = 1;
 colname = {'MV','PGV_x','PGV_y','PGV_z'};
-% countf = 13;countdrawout = 14;
 lowerfont = 0;
 % show the signals
 if 1
@@ -19,7 +18,6 @@ if 1
     dimsignal = length(colname);
     plotboard = tiledlayout(dimsignal,num_groups);
     plotboard.TileSpacing = 'compact';
-    % innerboard = tiledlayout(outerboard,'vertical');
     for i_ord = 1:dimsignal
 
 

@@ -14,7 +14,6 @@ drawout = 1;
 figure
 hold on
 svdpeplot = plot(y(:,1),y(:,2));
-%svdpeplot.Color = colorset(1,:);
 svdpeplot.Marker = 'o';
 svdpeplot.LineStyle = 'none';
 svdpeplot.MarkerSize = markersizes;
@@ -46,12 +45,3 @@ plotandprint;
 
 
 
-% barplot = bar(y,'FaceColor','flat');
-% colorset = hsv(6);
-% for i = 1:4
-%         barplot(i).FaceColor = colorset(i,:);
-% 
-%     % for j = 1:33
-%     %barplot(i).CData(j,:) = colorset(i,:);
-%     % end
-% end

@@ -12,9 +12,7 @@ if 0
 
 
     for i = 1:num_totalsamples
-        % X_mts = normrnd(0,2,[m,n]);
         X_mts = X_mts_cell{i};
-        % X_mts(end,:) = 0*X_mts(1,:)+0.02*rand([1,n]);
         pe_mts_cell{i} = calsvdpe_mts(X_mts,parametersval);
         dim_pe_mts(i) = length(pe_mts_cell{i});
         i/num_totalsamples/2
@@ -55,9 +53,6 @@ if 0
 else
     load test4_cwru_100225.mat
 end
-%"Dissipative Standard Map,DSM","Shaw Van Derpol Oscillator, SVDO", "Rossler Attractor,RA",
-% "Henon Area Preserving Quadratic Map, HAPQM","Simplest Driven Chaotic Flow, SDCF",
-% "Random Noise, RN","White Gaussian Noise, WGN","Random Walk, RW"
 
 %% plot graph
 nrows = 2;ncol = 2;

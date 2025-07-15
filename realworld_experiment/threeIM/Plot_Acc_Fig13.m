@@ -59,12 +59,3 @@ plotandprint;
 
 
 
-% barplot = bar(y,'FaceColor','flat');
-% colorset = hsv(6);
-% for i = 1:4
-%         barplot(i).FaceColor = colorset(i,:);
-% 
-%     % for j = 1:33
-%     %barplot(i).CData(j,:) = colorset(i,:);
-%     % end
-% end

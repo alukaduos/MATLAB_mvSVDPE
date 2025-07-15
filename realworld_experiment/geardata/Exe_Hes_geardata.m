@@ -30,9 +30,7 @@ load geardata_5.mat
 pe_mts_cell = cell(num_totalsamples,1);
 dim_pe_mts = zeros(num_totalsamples,1);
 for i = 1:num_totalsamples
-    % X_mts = normrnd(0,2,[m,n]);
     X_mts = X_mts_cell{i};
-    % X_mts(end,:) = 0*X_mts(1,:)+0.02*rand([1,n]);
     pe_mts_cell{i} = calsvdpe_mts(X_mts,parametersval);
     dim_pe_mts(i) = length(pe_mts_cell{i});
     %i/num_totalsamples/2
